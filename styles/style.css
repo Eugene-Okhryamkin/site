@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    display: flex;
+    background: rgb(9,106,121);
+    background: linear-gradient(90deg, rgba(9,106,121,1) 30%, rgba(0,255,237,1) 91%);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#info-text > h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 36px;
+    color: #fff;
+    -webkit-transition: opacity .2s ease-in-out;
+    -moz-transition: opacity .2s ease-in-out;
+    -ms-transition: opacity .2s ease-in-out;
+    -o-transition: opacity .2s ease-in-out;
+    transition: opacity .2s ease-in-out;
+    opacity: 1;
+}
+
+#info-text > h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 48px;
+    color: #fff;
+    animation: 10s text ease;
+}
+
+
+
+#info-btn > button {
+    padding: 20px 60px 20px 60px;
+    background: none;
+    border: 1px solid #fff;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    transition: .5s;
+    color: #fff;
+}
+
+#info-btn > button:hover {
+    background: #fff;
+    color:  rgba(9,106,121,1);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#info-btn > button:focus {
+    outline: none;
+}
+
+@keyframes text {
+    0% {
+        display: none;
+    }
+
+    100% {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    #info-text > h3 {
+        font-size: 18px;
+    }
+
+    #info-text > h1 {
+        font-size: 16px;
+    }
+    #info-btn > button {
+        font-size: 13px;
+    }
+
+    #info-btn {
+        margin-top: 30px;
+    }
+    
+    #info-btn > button {
+        padding: 10px 30px 10px 30px;
+        font-size: 13px;
+    }
+
+    
+}
